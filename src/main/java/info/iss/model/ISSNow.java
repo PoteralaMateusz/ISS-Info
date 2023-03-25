@@ -4,7 +4,7 @@ public class ISSNow {
 
     private String message;
     private Long timestamp;
-    private ISSPosition issPosition;
+    private ISSPosition iss_position;
 
     public String getMessage() {
         return message;
@@ -22,11 +22,11 @@ public class ISSNow {
         this.timestamp = timestamp;
     }
 
-    public ISSPosition getIssPosition() {
-        return issPosition;
+    public ISSPosition getIss_position() {
+        return iss_position;
     }
 
-    public void setIssPosition(ISSPosition issPosition) {
-        this.issPosition = issPosition;
+    public void setIss_position(ISSPosition iss_position) {
+        this.iss_position = iss_position;
     }
 }
