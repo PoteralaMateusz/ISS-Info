@@ -16,6 +16,10 @@ public class ISSApiReader {
         getConnectionAndReadData();
     }
 
+    public StringBuffer getApiDate() {
+        return apiDate;
+    }
+
     private void getConnectionAndReadData() {
 
         try {
