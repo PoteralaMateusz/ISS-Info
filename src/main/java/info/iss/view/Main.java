@@ -8,5 +8,7 @@ public class Main {
 
         ISSAstrosData astrosData = new ISSAstrosData("http://api.open-notify.org/astros.json");
 
+        astrosData.getPeopleInSpace().forEach(people -> System.out.println("Name: " + people.getName() + ", craft: " + people.getCraft() + "."));
+
     }
 }

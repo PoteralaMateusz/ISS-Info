@@ -3,6 +3,9 @@ package info.iss.api;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import info.iss.model.Astros;
+import info.iss.model.People;
+
+import java.util.List;
 
 public class ISSAstrosData {
 
@@ -23,5 +26,9 @@ public class ISSAstrosData {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public List<People> getPeopleInSpace(){
+        return peopleInSpace.getPeople();
     }
 }
